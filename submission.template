@@ -4,6 +4,7 @@
 %Code%
 
 int main() {
+    std::ios::sync_with_stdio(false);
 	%ClassName% solver;
 	%Input%
 	%Output%

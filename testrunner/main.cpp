@@ -1,4 +1,4 @@
-#include "C:/Users/Dmytro Prytula/CLionProjects/jhelper-example-project/tasks/Task1000.cpp"
+#include "C:/Users/Dmytro Prytula/CLionProjects/jhelper-example-project/tasks/TwoGangsters.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ bool check(std::string expected, std::string actual) {
 
 int main() {
 	std::vector<jhelper::Test> tests = {
-		{"1 5", "6", true, true},
+		{"4 7\n", "6 3\n", true, true},
 	};
 	bool allOK = true;
 	int testID = 0;
@@ -48,7 +48,7 @@ int main() {
 			std::stringstream in(test.input);
 			std::ostringstream out;
 			std::clock_t start = std::clock();
-			Task1000 solver;
+			TwoGangsters solver;
 			solver.solve(in, out);
 			std::clock_t finish = std::clock();
 			double currentTime = double(finish - start) / CLOCKS_PER_SEC;

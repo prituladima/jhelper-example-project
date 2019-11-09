@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class %ClassName% {
+class TwoGangsters {
 public:
 	void solve(std::istream& in, std::ostream& out) {
 
